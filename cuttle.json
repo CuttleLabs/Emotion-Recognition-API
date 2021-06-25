@@ -1,0 +1,9 @@
+{
+    "environments": {
+        "emotion-rec": {
+            "platform": "linux",
+            "transformer": "flask"
+        }
+    },
+    "notebook": "Emotion_recogniser.ipynb"
+}
