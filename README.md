@@ -32,6 +32,10 @@ Let's add the cell scoped config and line scoped config as seen in [Notebook](Em
 
 ```#cuttle-environment-assign emotion-rec request.files['file']```
 
+Apart from this, let's also disable the training steps and load from the saved model file so as to no re-train everytime we want to run the script.
+
+```#cuttle-environment-disable emotion-rec```
+
 ## Cuttle transform
 
 Use the environment name specified in the previous step.
