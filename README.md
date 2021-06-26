@@ -4,15 +4,17 @@ Converting a Jupyter notebook used to train an emotion recognition model into an
 
 ## 🚀 Installation
 
-```pip install cuttle```
+Installing cuttle: ```pip install cuttle```
+
+To install other dependencies: ```pip install -r requirements.txt```
 
 ## Initialise Cuttle
 
-Initialise cuttle in the same folder containing your Jupyter Notebook.
+Initialise cuttle in the same folder containing your Jupyter Notebook. 
+This step creates a cuttle.json file in the same directory.
 
 ```cuttle init```
 
-This step creates a cuttle.json file in the same directory.
 
 ## Create cuttle environment
 
