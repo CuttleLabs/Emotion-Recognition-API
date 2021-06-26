@@ -28,20 +28,20 @@ Notice the updated cuttle.json after this step.
 
 Let's add the cell scoped config and line scoped config as seen in [Notebook](Emotion_recogniser.ipynb)
 
-```#cuttle-environment-set-config <environment-name> method=POST route=<route> response=<variable>```
+```#cuttle-environment-set-config emotion-rec method=POST route=/api/emotion response=output```
 
-```#cuttle-environment-assign <environment-name> <dependancy>```
+```#cuttle-environment-assign emotion-rec request.files['file']```
 
 ## Cuttle transform
 
 Use the environment name specified in the previous step.
 
-```cuttle transform <environment-name>```
+```cuttle transform emotion-rec```
 
 TA-DA! You should now see an output folder created in the same repository containing a sub directory with the environment name. This folder contains the transformed file.
 
 ## ⚡️ Steps to test
 
-```python output/<environment-name>/main.py```
+```python output/emotion-rec/main.py```
 
-Your code is now running on the flask server. By default this port is localhost:5000. You can now send a file to localhost:5000/route to test your model.
+Your code is now running on the flask server. By default this port is localhost:5000. You can now send a file to localhost:5000/api/emotion to test your model.
