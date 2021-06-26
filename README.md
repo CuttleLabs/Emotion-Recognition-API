@@ -42,4 +42,4 @@ TA-DA! You should now see an output folder created in the same repository contai
 
 ```python output/<environment-name>/main.py```
 
-Your code is now running on the flask server. By default this port is localhost:5000. You can now send a file to localhost:5000/<route> to test your model.
+Your code is now running on the flask server. By default this port is localhost:5000. You can now send a file to localhost:5000/route to test your model.
